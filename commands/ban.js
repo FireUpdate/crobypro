@@ -3,7 +3,7 @@ const Discord = require("discord.js");
 module.exports.run = async (bot, message, args) => {
     let bUser = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
   if(bUser === message.author) return message.channel.send("<:no:491110753537884160> | Are you retarded? Why do you want to ban yourself?")
-    if(!bUser) return message.channel.send("Can't find user!");
+    if(!bUser) return message.channel.send("<:no:491110753537884160> **| Can't Find User!**");
     let bReason = args.join(" ").slice(22);
    if(!bReason) return message.channel.send("<:no:491110753537884160> | Please provide a reason!")
     if(!message.member.hasPermission("BAN_MEMBERS")) return message.channel.send("<:no:491110753537884160> **| You don't have `BAN_MEMBERS` permissons.**");
