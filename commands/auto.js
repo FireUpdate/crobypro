@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const sm = require('string-similarity');
 module.exports.run = async(bot, message, args) => {
-if (!args[0]) message.reply('Please input some text to autocomplete.');
+if (!args[0]) message.reply('<:no:491110753537884160> | Please input some text to autocomplete.');
 let members = [];
 let indexes = [];
 
